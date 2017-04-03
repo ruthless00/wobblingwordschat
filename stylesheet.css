@@ -1,0 +1,252 @@
+/*main webpage*/
+
+
+/*contact in footer*/	
+p.contact a{
+color:#065A73;
+background-color: transparent;
+text-decoration: none;
+font-size:150%;
+
+
+}	
+p.contact a:visited{
+color:#023F51;
+background-color: transparent;
+text-decoration: none;
+}	
+p.contact a:hover{
+color:#398BA4;
+background-color: transparent;
+text-decoration:none;
+}	
+p.contact a:active{
+color:#124DA2;
+background-color: transparent;
+text-decoration:none;
+}	
+
+#header{
+background-color:;
+position:;  /*place "fixed" to make the header stuck while scrolling*/
+margin:px;
+height:%;
+width:%;
+font-size:220%;
+border-raduis:px;
+text-align:center;
+color:#7B241C;
+font-family:'Minion Web', cursive;
+position:;
+}
+
+#footer{
+background-color:#000000;
+width:100%;
+height:75px;
+color:#FFFFFF;
+text-align:center;
+font-size:70%;
+
+/*the gradients colors in footer*//*the sign % is the percentage of the color in footer*/
+	background:#000000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#0a0b0c 20%,#0e0f0f 10%,#000000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0a0b0c 20%,#0e0f0f 10%,#000000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0a0b0c 20%,#0e0f0f 10%,#000000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0a0b0c 20%,#0e0f0f 10%,#000000); /* Standard syntax (must be last) */ 
+}
+
+/*slideshow*/
+.mySlides {display:none;}
+
+/*to make the bg mage fixed __background-attachment: fixed;__*/
+body {
+cursor:url(http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/simple-red-glossy-icons-business/086745-simple-red-glossy-icon-business-cursor.png), auto;
+
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    
+ 
+}
+
+	body::-webkit-scrollbar{
+    width: 12px;
+/* this targets the default scrollbar (compulsory) */
+}
+ 
+    body::-webkit-scrollbar-track {
+	background-color:#5b5b5b;
+/*the bg color or scrollbar called "track"*/
+}
+ 
+   body::-webkit-scrollbar-thumb {
+  background-color:#3a0000 ;
+/*color of the thing which goes up n down*/
+}
+
+    body::-webkit-scrollbar-button {
+      background-color:#261e1e ;
+/* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+}
+
+    body::-webkit-scrollbar-corner {
+	background-color:;/*use it if the both vertical and the horizontal bars od scroll appear, then perhaps the right bottom corner also needs to be styled */
+	}
+
+
+#logo{
+	background:#000000;
+
+}
+
+
+/*---navigation bar---*/
+#nav {
+    background-color:#226186; /*the bg of navbar*/  
+
+	/*the gradients colors in nav*/
+	background:#0f2a3a; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#0f2a3a,#357da8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0f2a3a,#357da8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0f2a3a,#357da8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0f2a3a,#357da8); /* Standard syntax (must be last) */ 
+}
+
+#nav :hover{
+	 border: #b8d8ff 1px solid; /*the borders of nav*/
+	 box-shadow: 2px 2px 5px #b8d8ff;
+	 transition:linear 0.4s; /*slow hovering*/
+	 
+
+}
+
+#nav_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+	
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-width: 200px;
+}
+#nav ul li {
+    display: inline-block;
+	transition:linear 0.4s; /*slow hovering*/
+	
+ 
+}
+
+#nav ul li:hover {
+    background-color: #467896; /*hovring over the menu*/
+	
+}
+
+#nav ul li a:hover {
+color:#044C75;	/*hovring over the names like links in it*/
+	
+}
+
+
+#nav ul li a, visited {
+    color: #CCC;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#nav ul li:hover ul {
+    display: block;
+	
+}
+#nav ul ul {
+    display: none;
+	
+    position: absolute;
+    background-color:#326482; /*bg color drop down list*/
+    border: 3px solid #001725; /*the border of dropdown nenu*/
+    border-top: 0;
+    margin-left: -5px;
+	border-radius:10px;/*--curve dropdownmenu's border--*/ 
+	padding:5px;
+}
+#nav ul ul:hover{
+	 border: 3px solid #b8d8ff;
+	 box-shadow: 2px 2px 5px #b8d8ff;
+}
+#nav ul ul li {
+    display: block;
+	text-align: left;
+	border-radius:10px;/*--curve dropdowmmenu's hovring--*/
+	
+	
+}
+
+
+#nav ul ul li a:hover {
+    color: #033F66; /*hovring over the dropdown menu's names*/
+	padding:10px; /*--padding of curve dropdownmenu while hovering--*/
+	
+}
+
+
+
+
+ 
+
+  /* Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+  @media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+.social-icons{
+  float: right; 
+  margin-right:2%;
+  
+}
+/*______________________________________________________________________*/
+/*test part*/
+left-icons2{
+	float:right;
+	opacity:0.1;
+	position:fixed;
+}
+.time{
+	float:right;
+}
+
+any div's name{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
